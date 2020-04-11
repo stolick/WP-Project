@@ -1,0 +1,33 @@
+.tabs {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-btn {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+}
+
+.tab-active-btn {
+  background-color: #9da5e5 !important;
+  border: #9da5e5 !important;
+  color: white;
+}
+
+.tab-active-btn:focus {
+  outline: none !important;
+}
+.tab-active-btn:active {
+  outline: none !important;
+}
+
+@media (max-width: 360px) {
+  .tab-btn .btn {
+    width: 5.7rem;
+    margin: 0;
+    font-size: 0.7rem;
+    padding-right: 2px 2px;
+    text-align: center;
+  }
+}

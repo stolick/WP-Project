@@ -1,0 +1,18 @@
+footer {
+  min-height: 20vh;
+  z-index: 100;
+  user-select: none;
+}
+
+.lang-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lang-btn:hover,
+.lang-btn:active {
+  text-decoration: none;
+}

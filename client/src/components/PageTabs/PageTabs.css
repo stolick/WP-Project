@@ -1,0 +1,33 @@
+.line-btw {
+  height: 4px;
+  width: 60vw;
+  background-color: #2e2e2e;
+}
+.progress {
+  background-color: transparent;
+  min-height: fit-content;
+  min-width: 100%;
+  padding: 10px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+@media (min-width: 900px) {
+  .line-btw {
+    width: 30rem;
+  }
+  .progress {
+    min-width: 70%;
+    padding: 20px 10rem;
+  }
+}
+@media (max-width: 420px) {
+  .line-btw {
+    width: 33vw;
+  }
+  .progress {
+    padding: 20px 0;
+    min-width: 100%;
+    background-color: none;
+  }
+}
