@@ -32,6 +32,7 @@ public class AirportJdbcRepository {
             airport = new Airport();
             airport.setAirportId(rs.getString("AIRPORTID"));
             airport.setAirportName(rs.getString("AIRPORTNAME"));
+            airport.setCountry(rs.getString("COUNTRY"));
             return airport;
         }
     }
@@ -45,7 +46,8 @@ public class AirportJdbcRepository {
 
         getAllAirports = "select " +
                 "AIRPORTS.NAME as AIRPORTNAME, " +
-                "AIRPORTS.AIRPORTID as AIRPORTID "+
+                "AIRPORTS.AIRPORTID as AIRPORTID, "+
+                "AIRPORTS.COUNTRY as COUNTRY "+
                 "from AIRPORTS " +
                 "LIMIT 100;";
 
